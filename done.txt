@@ -1,0 +1,24 @@
+  504  npm create vite@latest
+  505  cd newtry/
+  506  npm i && npm run dev
+  507  echo "# newtry" >> README.md
+  508  git init
+  509  git add README.md
+  510  git commit -m "first commit"
+  511  git branch -M main
+  512  git remote add origin git@github.com:mrivaslezama/newtry.git
+  513  git push -u origin main
+  514  npm i gh-pages
+  515  clear
+  516  code .
+  517  git branch
+  518  npm i gh-pages --save-dev
+  519  history
+
+
+https://www.youtube.com/watch?v=-weTjP3pYxs
+
+como cargar templates en vite
+hacer un crud en vite
+typescript how to ...
+bootstrap...
