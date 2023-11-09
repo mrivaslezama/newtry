@@ -1,0 +1,16 @@
+
+
+button{
+    width: 75;
+    border: none;
+    margin-right: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+.active {
+    background-color: black;
+    color: white;
+    transition: all .3s ease-out;
+}

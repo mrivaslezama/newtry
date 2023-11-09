@@ -1,14 +1,23 @@
+import {useState} from 'react'
+import logo from './assets/logo.svg'
 import './App.css'
+import { StateSelector } from './components/StateSelector';
 
 function App() {
+
+  const [currentState, setCurrentState ] = useState('none');
+
   return <main className="bg-gray-50">
     <div className="container mx-auto p-6">
+        <div className="w-full flex items-center justify-between">
+      
+  <img src={logo} className= "rounded full w-20 h-20 px-4" alt="Image" />
 
-      <div className="w-full flex items-center justify-between">
+
         <a className="flex items-center text-gray-900 
                     no-underline hover:no-underline font-bold 
                     text-2xl lg:text-2xl" href="#">
-          Freelance - Web developer
+          MR_Dev
         </a>
 
         <div className="flex w-1/2 justify-end">
@@ -25,6 +34,7 @@ function App() {
         </div>
       </div>
     </div>
+
   <div className="container mx-auto p-6">
     <div className="w-full flex items-center justify-between">
       <h1 className="flex items-center text-gray-900 
@@ -38,15 +48,27 @@ function App() {
           <span></span>
           <h3> Asesoramos todas las etapas del desarrollo web</h3>
         </div>
+
       </div>  
     </div>
   </div>
 
-  <div>
-    
+<section className="container mx-auto p-6">
+  <div className='flex items-center text-gray-900 
+                    no-underline hover:no-underline font-bold 
+                    text-2xl lg:text-4xl'>
+
+      <div className='App Appheader mt-12 md:mt-0'>
+        <h1 className="text-m font-semibold text-gray-400 tracking-wider uppercase">What I do? { currentState }</h1>
+        <StateSelector 
+        selectedState={currentState}
+        onStateChange={ (state) => setCurrentState(state)}
+        />
+      </div>
 
   </div>
-
+</section>
+  
   </main>
 }
 
