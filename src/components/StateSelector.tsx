@@ -1,6 +1,6 @@
 import {FC} from 'react';
 
-const possibleStates = ['Web development', 'Desing thinking', 'UX/UI-research', 'Project development & management'];
+const possibleStates = ['Web development', 'Desing thinking', 'Project development'];
 
 interface Props {
     selectedState: string;

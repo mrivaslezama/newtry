@@ -1,5 +1,5 @@
 import {useState} from 'react'
-import logo from './assets/logo.svg'
+import logo from './assets/online-research-icon.svg'
 import './App.css'
 import { StateSelector } from './components/StateSelector';
 
@@ -17,12 +17,12 @@ function App() {
         <a className="flex items-center text-gray-900 
                     no-underline hover:no-underline font-bold 
                     text-2xl lg:text-2xl" href="#">
-          MR_Dev
+          DigitalEntreprenuer
         </a>
 
         <div className="flex w-1/2 justify-end">
           <div className="">
-            <button type="button" className="inline-block 
+            <button type="button"  className="inline-block 
                   px-6 py-2.5 bg-blue-600 text-white 
                   font-medium text-xs leading-tight 
                   uppercase rounded shadow-md hover:bg-rose-700 
@@ -42,14 +42,6 @@ function App() {
                     text-2xl lg:text-4xl">
          Hi, I am Miguel
       </h1>
-      <div>
-        <div className="mt-12 md:mt-0">
-          <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase"> Creamos productos digitales</h3>
-          <span></span>
-          <h3> Asesoramos todas las etapas del desarrollo web</h3>
-        </div>
-
-      </div>  
     </div>
   </div>
 
@@ -58,15 +50,33 @@ function App() {
                     no-underline hover:no-underline font-bold 
                     text-2xl lg:text-4xl'>
 
-      <div className='App Appheader mt-12 md:mt-0'>
+      <div className='App Appheader mt-8 md:mt-0'>
         <h1 className="text-m font-semibold text-gray-400 tracking-wider uppercase">What I do? { currentState }</h1>
+
 
         <StateSelector 
         selectedState={currentState}
         onStateChange={ (state) => setCurrentState(state)}
         />
       </div>
+
   </div>
 </section>
+<article className="container mx-auto p-6">
+    <div>
+        <div className="mt-12 md:mt-0">
+          <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase"> Digital solutions</h3>
+          <span></span>
+          <ul>
+          <h3> Ruby on Rails </h3>
+          <h3> React, Typscript, Tailwindcss </h3>
+          <h3> Posgresql </h3>
+          <h3> Python Django </h3>
+          </ul>
+        </div>
+    </div>  
+</article>
 </main>
 }
+
+export default App
