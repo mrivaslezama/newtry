@@ -22,3 +22,7 @@ como cargar templates en vite
 hacer un crud en vite
 typescript how to ...
 bootstrap...
+
+
+///
+npm run dev

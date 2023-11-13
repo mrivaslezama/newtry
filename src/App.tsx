@@ -60,16 +60,13 @@ function App() {
 
       <div className='App Appheader mt-12 md:mt-0'>
         <h1 className="text-m font-semibold text-gray-400 tracking-wider uppercase">What I do? { currentState }</h1>
+
         <StateSelector 
         selectedState={currentState}
         onStateChange={ (state) => setCurrentState(state)}
         />
       </div>
-
   </div>
 </section>
-  
-  </main>
+</main>
 }
-
-export default App
